@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">Rp3 Demo</string>
+    <string name="label_code_search">Enviar</string>
+    <string name="label_insert_code">Código</string>
+    <string name="label_scan_barcode">Escanear</string>
+    <string name="title_option_setCode">Enviar Código</string>
+	<string name="title_option_order">Pedido</string>
+	<string name="title_option_checklist">Check List</string>
+	
+	<string name="hint_search_client">Buscar Cliente</string>
+</resources>

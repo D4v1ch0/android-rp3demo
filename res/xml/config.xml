@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <appConfiguration>
+        <help>www.loteria.com.ec</help>
+        <allowSettingsOnAut>FALSE</allowSettingsOnAut>
+        <allowHelpOnAut>FALSE</allowHelpOnAut>
+    </appConfiguration>
+    <dataBaseConfiguration>       
+       <name>Loteria.db</name>
+       <version>1</version>
+    </dataBaseConfiguration> 
+    <webServiceConfiguration>                
+        <webServiceData>
+            <name>loteria</name>
+            <url>http://[@server:54.94.162.88]/Loteria/Loteria.Loteria.svc/web</url>
+            <type>REST</type>
+            <namespace>http://schemas.rp3.com.ec/loteria/</namespace>                        
+            <methods>
+                <method>
+					<name>setcode</name>
+					<action>registercode/json</action>
+					<webMethod>POST</webMethod>
+                </method>
+                <method>
+					<name>setorder</name>
+					<action>registerorder/json</action>
+					<webMethod>POST</webMethod>
+                </method> 
+                <method>
+					<name>setchecklist</name>
+					<action>registerchecklist/json</action>
+					<webMethod>POST</webMethod>
+                </method>                                                 
+            </methods>                        
+        </webServiceData>
+    </webServiceConfiguration>           
+</config>

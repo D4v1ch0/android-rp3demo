@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="fragment_code_scan" type="layout">@layout/fragment_code_scan_land</item>
+</resources>

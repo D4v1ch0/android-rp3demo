@@ -1,0 +1,98 @@
+<sql>
+    <statement>
+      CREATE TABLE tbCodeScan(
+      _id INTEGER PRIMARY KEY AUTOINCREMENT,
+      User TEXT,
+      Code TEXT,
+      ScanDate INTEGER,
+      Latitude REAL,
+      Longitude REAL,
+      Address TEXT
+      )
+	</statement>
+	<statement>
+	  CREATE TABLE tbCheckListTemplate(
+	  _id INTEGER PRIMARY KEY AUTOINCREMENT,
+	  Label TEXT
+	  )
+	</statement>
+	<statement>
+	  CREATE TABLE tbCheckList (
+      _id INTEGER PRIMARY KEY AUTOINCREMENT,
+      User TEXT,
+      Code TEXT,      
+      Date INTEGER,      
+      Label TEXT,
+      CheckValue INTEGER,
+      Latitude REAL,
+      Longitude REAL,
+      Address TEXT,
+      Client TEXT
+      )
+	</statement>	
+	<statement>
+	  CREATE TABLE tbProduct(
+	  _id INTEGER PRIMARY KEY AUTOINCREMENT,
+	  Name TEXT		    
+	  )
+	</statement>
+	<statement>
+	  CREATE TABLE tbOrder(
+	  _id INTEGER PRIMARY KEY AUTOINCREMENT,
+	  User TEXT,
+	  OrderDate INTEGER,	  
+	  Code TEXT,	  
+	  Product TEXT,
+	  Quantity INTEGER,	  	  
+	  Latitude REAL,
+      Longitude REAL,
+      Address TEXT,
+      Client TEXT
+	  )
+	</statement>
+	<statement>
+	  CREATE TABLE tbClient(
+	  _id INTEGER PRIMARY KEY AUTOINCREMENT,
+	  Names TEXT	  
+	  )
+	</statement>
+	<statement>
+	    INSERT INTO tbCheckListTemplate(Label) VALUES('Letrero bien ubicado')	    	    	    
+	</statement>
+	<statement>
+	    INSERT INTO tbCheckListTemplate(Label) VALUES('Local Limpio')
+	</statement>
+	<statement>
+	    INSERT INTO tbCheckListTemplate(Label) VALUES('Producto en Vitrina')
+	</statement>
+	<statement>
+	    INSERT INTO tbCheckListTemplate(Label) VALUES('Nivel de Stock Adecuado')
+	</statement>
+	<statement>
+	    INSERT INTO tbProduct(Name) VALUES('Loteria')	    
+	</statement>	
+	<statement>
+	    INSERT INTO tbProduct(Name) VALUES('Lotto')
+	</statement>
+	<statement>
+	    INSERT INTO tbProduct(Name) VALUES('Pozo Millonario')
+	</statement>
+	<statement>
+	    INSERT INTO tbProduct(Name) VALUES('Las Raspaditas')
+	</statement>
+	<statement>
+	    INSERT INTO tbClient(Names) VALUES('DISMARDIS')
+	</statement>
+	<statement>
+	    INSERT INTO tbClient(Names) VALUES('GOLDENAT')
+	</statement>
+	<statement>
+	    INSERT INTO tbClient(Names) VALUES('JORGE GUAMAN')
+	</statement>
+	<statement>
+	    INSERT INTO tbClient(Names) VALUES('JOSE ALBINO')
+	</statement>
+	<statement>
+	    INSERT INTO tbClient(Names) VALUES('LUIS GERARDO PACALLA')
+	</statement>
+</sql>

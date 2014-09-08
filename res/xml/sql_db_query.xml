@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sql>  
+    <statement name="ClientFinancialProduct">
+        SELECT
+        tbClientFinancialProduct._id,
+        tbClientFinancialProduct.FinancialProductId,
+        tbClientFinancialProduct.IsSelected,
+        tbClientFinancialProduct.InternalMessageId,
+        tbFinancialProduct.Name AS tbFinancialProduct_Name
+        FROM tbClientFinancialProduct
+        JOIN tbFinancialProduct
+        ON tbClientFinancialProduct.FinancialProductId = tbFinancialProduct._id
+        WHERE tbClientFinancialProduct.ClientId = ?
+    </statement>  
+</sql>

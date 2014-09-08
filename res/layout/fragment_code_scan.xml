@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/ec.com.rp3.demo">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" >
+
+            <include layout="@layout/layout_input_code" />
+        </FrameLayout>
+
+        <rp3.widget.NumberPad
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:targetView="@+id/textView_code"
+            app:maxLength="15"
+            android:layout_marginTop="5dp" >
+        </rp3.widget.NumberPad>
+    </LinearLayout>
+
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:maxLines="3"
+        android:gravity="center"
+        android:layout_height="wrap_content"        
+        android:id="@+id/textView_location"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
